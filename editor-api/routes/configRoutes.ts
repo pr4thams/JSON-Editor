@@ -4,6 +4,6 @@ import * as configController from "../controllers/configController";
 const router = express.Router();
 
 router.get("/", configController.getConfig);
-router.put("/", configController.updateConfig);
+router.post("/", configController.updateConfig);
 
 export default router;
