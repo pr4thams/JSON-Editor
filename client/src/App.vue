@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import axios from "axios";
-import jsonEditor from "./components/json-editor.vue";
+import jsonEditor from "./components/parent-editor.vue";
 
 export default {
   name: "App",

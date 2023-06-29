@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import axios from "axios";
-import JsonEditor from "./JsonEditor.vue";
+import JsonEditor from "./json-fields.vue";
 export default {
   name: "JsonEditorParent",
   components: {
