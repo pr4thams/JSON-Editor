@@ -1,23 +1,33 @@
 <template>
   <div>
+    <!-- Iteratively process each key/value pair in jsonData -->
     <div v-for="(value, key, index) in jsonData" :key="index">
       <div v-if="Array.isArray(value)" class="json-array">
         <div>{{ key }}:</div>
+
+        <!-- Iteratively process each item in the array -->
         <div
           v-for="(item, itemIndex) in value"
           :key="itemIndex"
-          class="nested json-array-item"
+          class="json-array-item"
         >
+          <!-- Recursively process each object in the array using JsonEditor -->
           <JsonEditor v-if="isObject(item)" :json-data="item" />
           <div v-else>{{ item }}</div>
         </div>
       </div>
+
+      <!-- Check if value is an object -->
       <div v-else-if="isObject(value)" class="json-object">
         <div>{{ key }}:</div>
-        <div class="nested">
+
+        <!-- Recursively process the object using JsonEditor -->
+        <div>
           <JsonEditor :json-data="value" />
         </div>
       </div>
+
+      <!-- For non-array and non-object values -->
       <div v-else class="json-primitive">
         <label>{{ key }}:</label>
         <input
@@ -30,26 +40,18 @@
 </template>
 
 <script lang="ts">
-import axios from "axios";
 export default {
   name: "JsonEditor",
   props: {
-    jsonData: Object,
+    jsonData: {
+      type: Object,
+      default: () => ({}),
+    },
   },
   methods: {
+    // Check if an item is a non-null, non-array object
     isObject(item: null) {
       return typeof item === "object" && !Array.isArray(item) && item !== null;
-    },
-    async saveChanges() {
-      try {
-        const response = await axios.post(
-          "http://localhost:3100/config",
-          this.jsonData
-        );
-        console.log(response.data);
-      } catch (error) {
-        console.error(error);
-      }
     },
   },
 };
