@@ -25,7 +25,7 @@ export default {
         this.jsonData = response.data;
       })
       .catch((error) => {
-        console.log("There was an error:", error);
+        console.error("There was an error fetching the JSON file:", error);
       });
   },
   methods: {
