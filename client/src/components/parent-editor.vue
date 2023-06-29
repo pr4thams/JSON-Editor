@@ -4,7 +4,7 @@
     <JsonEditor :json-data="jsonData" @update:jsonData="jsonData = $event" />
 
     <!-- Button: save any made changes -->
-    <Button @click="saveChanges">Save</Button>
+    <button @click="saveChanges">Save</button>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ import Button from "primevue/button";
 export default {
   name: "JsonEditorParent",
   components: {
+    Button,
     JsonEditor,
   },
   data() {
