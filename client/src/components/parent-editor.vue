@@ -71,6 +71,7 @@ export default {
   color: black;
   border: none;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 .save-button:hover {
   background-color: rgb(90, 90, 96);

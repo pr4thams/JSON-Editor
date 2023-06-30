@@ -1,8 +1,3 @@
-
-<!-- ### Testing
-
-`cd editor-api` and then `npm test`. -->
-
 # JSON Editor
 
 JSON Editor is a full-stack web application that allows users to fetch, edit, and validate JSON data via an intuitive and visually appealing interface. It uses an extensive suite of modern technologies for both server and client sides.
@@ -29,6 +24,7 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 - A confirmation will appear at the top of the screen indicating that changes have been saved.
 
 ## Architecture and Design
+
 The application uses Vue.js for the client-side, creating a dynamic and responsive user interface. The JSON data is presented as a series of nested components, allowing for deep nesting of JSON data.
 
 The back-end server uses Express.js and Node.js, providing a robust and efficient API for handling JSON data. The server fetches and stores JSON data in memory, making it fast and efficient to access and update data.
@@ -36,6 +32,7 @@ The back-end server uses Express.js and Node.js, providing a robust and efficien
 The project uses Axios for handling HTTP requests between the client and server, providing promise-based architecture and a wide range of HTTP client capabilities.
 
 ## Testing
+
 The mocha testing is performed using chai and chai-http libraries. Run the test using `npm test` while in server directory.
 
 Config Controller Tests
