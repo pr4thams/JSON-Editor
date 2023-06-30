@@ -12,18 +12,18 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 
 ## Getting Started
 
-- Clone the repository to your local machine.
-- Open a terminal, and run the server using the command : `npm run server`
-- Open a new terminal on the side and run the client using the command : `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
-
-## Usage
-
-- The JSON file should be named `config.json` and should be in the 'editor-api' directory like this:
+- Clone the repository to your local machine with `git clone https://github.com/pr4thams/JSON-Editor.git`
+- Add the JSON file, named `config.json` and should be placed in the 'editor-api' directory like this:
 
 ```
 ├── editor-api
    └── config.json
 ```
+
+- Open a terminal, and run the server using the command : `npm run server`
+- Open a new terminal on the side and run the client using the command : `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
+
+## Usage
 
 - The JSON editor will fetch the initial JSON data from the server upon loading.
 - Use the provided text inputs to edit each field of the JSON data.
