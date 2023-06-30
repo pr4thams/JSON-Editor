@@ -23,8 +23,8 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
    └── config.json
 ```
 
-- Open a terminal, and run the server using the command : `npm run server`
-- Open a new terminal on the side and run the client using the command : `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
+- While in the root directory of the project and not changing into subdirectories, open a terminal, and run the server using the command: `npm run server`
+- Open a new terminal on the side and run the client using the command: `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
 
 ## Usage
 
