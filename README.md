@@ -1,6 +1,6 @@
 # JSON Editor
 
-JSON Editor is a full-stack web application that allows users to fetch, edit, and validate JSON data via an intuitive and visually appealing interface. It uses an extensive suite of modern technologies for both server and client sides.
+JSON Editor is a full-stack web application that allows users to fetch, edit, and validate JSON data via an intuitive and visually appealing interface. It uses an extensive suite of modern technologies for both the server and client sides.
 
 ## Technologies Used
 
@@ -8,20 +8,21 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 - **Typescript:** For static typing and improved code readability and maintainability.
 - **Node.js v18.16:** Powers the server-side, handling networking and I/O operations efficiently.
 - **Express.js:** Provides server-side routing and middleware on top of Node.js.
-- **axios:** Used for making HTTP requests from both client and server sides.
+- **Axios:** Used for making HTTP requests from both client and server sides.
 
 ## Getting Started
 
 - Clone the repository to your local machine with `git clone https://github.com/pr4thams/JSON-Editor.git`
-- Add the JSON file, named `config.json` and should be placed in the 'editor-api' directory like this:
+- Once cloned, change into the project directory using `cd [filename]`
+- Add the JSON file, named `config.json`, and should be placed in the 'editor-api' directory like this:
 
 ```
 ├── editor-api
    └── config.json
 ```
 
-- Open a terminal, and run the server using the command : `npm run server`
-- Open a new terminal on the side and run the client using the command : `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
+- Open a terminal, and run the server using the command: `npm run server`
+- Open a new terminal on the side and run the client using the command: `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
 
 ## Usage
 
@@ -69,7 +70,7 @@ Render input field for key/value pair
 
 ## Testing
 
-The mocha testing is performed using chai and chai-http libraries. Run the test using `npm test` while in server directory.
+The mocha testing is performed using chai and chai-HTTP libraries. Run the test using `npm test` while in the 'editor-api' directory.
 
 Config Controller Tests
 
