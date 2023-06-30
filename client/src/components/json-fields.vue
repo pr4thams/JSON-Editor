@@ -13,7 +13,14 @@
         >
           <!-- Recursively process each object in the array using JsonEditor -->
           <JsonEditor v-if="isObject(item)" :json-data="item" />
-          <div v-else>{{ item }}</div>
+          <!-- Editable field for primitive values -->
+          <div v-else class="json-primitive">
+            <input
+              class="rounded-input"
+              v-model="jsonData[key]"
+              @input="$emit('update:jsonData', jsonData)"
+            />
+          </div>
         </div>
       </div>
 
@@ -31,6 +38,7 @@
       <div v-else class="json-primitive">
         <label>{{ key }}:</label>
         <input
+          class="rounded-input"
           v-model="jsonData[key]"
           @input="$emit('update:jsonData', jsonData)"
         />
@@ -40,10 +48,9 @@
 </template>
 
 <script lang="ts">
-import InputText from 'primevue/inputtext';
-
 export default {
   name: "JsonEditor",
+  component: {},
   props: {
     jsonData: {
       type: Object,
@@ -68,5 +75,16 @@ export default {
   padding-left: 30px;
   border-left: 1px solid #888;
   margin-bottom: 10px;
+}
+.rounded-input {
+  border-radius: 10px; /* Makes the input have rounded edges */
+  background-color: rgb(
+    80,
+    76,
+    76
+  ); /* Sets the background color to dark gray */
+  padding: 3px 10px;
+  border: none; /* Removes default border */
+  color: rgb(255, 255, 255); /* Changes input text color to white */
 }
 </style>

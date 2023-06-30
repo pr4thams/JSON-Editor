@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="navbar">
     <h1>JSON Editor</h1>
   </header>
 
@@ -21,10 +21,13 @@ export default {
 </script>
 
 <style scoped>
-header {
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(70, 69, 69);
+  margin-bottom: 15px;
 }
 
 .json-editor-container {

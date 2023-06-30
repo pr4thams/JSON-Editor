@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/config", configRoutes);
 
-const PORT = 3100;
+const PORT = 3000;
 
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
