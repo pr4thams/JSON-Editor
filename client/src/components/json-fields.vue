@@ -77,14 +77,10 @@ export default {
   margin-bottom: 10px;
 }
 .rounded-input {
-  border-radius: 10px; /* Makes the input have rounded edges */
-  background-color: rgb(
-    80,
-    76,
-    76
-  ); /* Sets the background color to dark gray */
+  border-radius: 10px;
+  background-color: rgb(80, 76, 76);
   padding: 3px 10px;
-  border: none; /* Removes default border */
-  color: rgb(255, 255, 255); /* Changes input text color to white */
+  border: none;
+  color: rgb(255, 255, 255);
 }
 </style>

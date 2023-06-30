@@ -36,6 +36,7 @@ The project uses Axios for handling HTTP requests between the client and server,
 The mocha testing is performed using chai and chai-http libraries. Run the test using `npm test` while in server directory.
 
 Config Controller Tests
+
 - GET /config: Ensures the server can load and send the correct JSON data.
 - POST /config: Verifies that the server updates the JSON configuration file accurately.
 
