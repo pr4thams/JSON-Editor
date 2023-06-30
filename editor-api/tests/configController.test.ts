@@ -25,7 +25,7 @@ describe("Config Controller", () => {
 
   describe("POST /config", () => {
     it("should update the JSON Configuration File", (done) => {
-      const newConfig = { port: 8888 };
+      const newConfig = { port: 1000 };
       const existingConfig = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
       const expectedConfig = { ...existingConfig, ...newConfig };
 

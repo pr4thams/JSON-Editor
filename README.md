@@ -38,6 +38,35 @@ The back-end server uses Express.js and Node.js, providing a robust and efficien
 
 The project uses Axios for handling HTTP requests between the client and server, providing promise-based architecture and a wide range of HTTP client capabilities.
 
+Here is a diagram explaining the rendering process of the nested fields using recursive component calls and iteration in Vue 3:
+
+```
+Component Init
+ |
+ V
+Rendering Loop -- Yes --> Array Check -- Yes --> Array Loop -- Yes --> Is Object? -- Yes --> Render `JsonEditor` (Recursion)
+ |                  |     |                 |      |                  |     |
+ |                  |     |                 |      |                  |     No
+ |                  |     |                 |      |                  | 
+ |                  |     |                 |      |                  V
+ |                  |     |                 |      |                  Render input field for array item
+ |                  |     |                 |      |
+ |                  |     |                 |      No
+ |                  |     |                 |     
+ |                  |     |                 V
+ |                  |     |                 Render input field for array item
+ |                  |     |
+ |                  |     No
+ |                  |     
+ |                  V
+ |                  Object Check -- Yes --> Render `JsonEditor` (Recursion)
+ |                        |
+ |                        No
+ |                        
+ V
+Render input field for key/value pair
+```
+
 ## Testing
 
 The mocha testing is performed using chai and chai-http libraries. Run the test using `npm test` while in server directory.
