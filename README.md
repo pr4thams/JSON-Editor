@@ -2,21 +2,28 @@
 
 JSON Editor is a full-stack web application that allows users to fetch, edit, and validate JSON data via an intuitive and visually appealing interface. It uses an extensive suite of modern technologies for both server and client sides.
 
-## Technologies Used:
+## Technologies Used
 
-- **Vue.js:** Powers the client-side, providing an interactive and responsive user interface.
+- **Vue.js 3:** Powers the client-side, providing an interactive and responsive user interface.
 - **Typescript:** For static typing and improved code readability and maintainability.
-- **Node.js:** Powers the server-side, handling networking and I/O operations efficiently.
+- **Node.js v18.16:** Powers the server-side, handling networking and I/O operations efficiently.
 - **Express.js:** Provides server-side routing and middleware on top of Node.js.
 - **axios:** Used for making HTTP requests from both client and server sides.
 
-## Getting Started:
+## Getting Started
 
 - Clone the repository to your local machine.
 - Open a terminal, and run the server using the command : `npm run server`
 - Open a new terminal on the side and run the client using the command : `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
 
-## Usage:
+## Usage
+
+- The JSON file should be named `config.json` and should be in the 'editor-api' directory like this:
+
+```
+├── editor-api
+   └── config.json
+```
 
 - The JSON editor will fetch the initial JSON data from the server upon loading.
 - Use the provided text inputs to edit each field of the JSON data.
@@ -39,4 +46,3 @@ Config Controller Tests
 
 - GET /config: Ensures the server can load and send the correct JSON data.
 - POST /config: Verifies that the server updates the JSON configuration file accurately.
-

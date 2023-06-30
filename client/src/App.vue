@@ -13,10 +13,11 @@
         </div>
       </div>
     </div>
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-text">
         <p>Desgined Through Vue.js</p>
-        <p>Currently v1.0. Hosted on Vercel</p>
+        <p>Currently v1.0. Hosted on Vercel. Docs available on GitHub.</p>
         <a
           href="https://github.com/pr4thams/JSON-Editor"
           target="_blank"
