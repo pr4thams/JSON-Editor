@@ -13,6 +13,7 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 ## Getting Started
 
 - Clone the repository to your local machine with `git clone https://github.com/pr4thams/JSON-Editor.git`
+- Change into the project directory using `cd [filename]`
 - Add the JSON file, named `config.json` and should be placed in the 'editor-api' directory like this:
 
 ```
