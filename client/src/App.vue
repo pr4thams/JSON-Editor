@@ -8,17 +8,29 @@
       <UsageInstructions class="instructions" />
       <!-- JSON Editor Component -->
       <div class="json-editor-container">
-        <JsonEditorComponent />
+        <div class="editor-box">
+          <JsonEditorComponent />
+        </div>
       </div>
     </div>
     <footer class="footer">
-    <div class="footer-text">
-      <p>Desgined Through Vue.js. Maintained By Pratham.</p>
-      <p>Currently v1.0. Hosted on Vercel</p>
-      <a href="https://github.com/pr4thams/JSON-Editor" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/pr4thams/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </div>
-  </footer>
+      <div class="footer-text">
+        <p>Desgined Through Vue.js</p>
+        <p>Currently v1.0. Hosted on Vercel</p>
+        <a
+          href="https://github.com/pr4thams/JSON-Editor"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/pr4thams/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -45,7 +57,6 @@ export default {
   margin-bottom: 15px;
 }
 
-/* New CSS */
 .main-container {
   display: flex;
   justify-content: center;
@@ -54,7 +65,7 @@ export default {
 
 .instructions,
 .json-editor-container {
-  margin: 0 50px;
+  margin: 0 100px;
 }
 .footer {
   display: flex;
