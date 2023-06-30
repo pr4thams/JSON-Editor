@@ -7,6 +7,6 @@
     "client": "cd client && npm i && npm run dev",
     "server": "cd editor-api && npm i && npm start"
   },
-  "author": "",
+  "author": "Pratham Sharma",
   "license": "ISC"
 }
