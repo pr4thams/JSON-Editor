@@ -14,7 +14,7 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 
 - Clone the repository to your local machine with `git clone https://github.com/pr4thams/JSON-Editor.git`
 - Change into the project directory using `cd [filename]`
-- Add the JSON file, named `config.json` and should be placed in the 'editor-api' directory like this:
+- Add the JSON file, named `config.json`, and should be placed in the 'editor-api' directory like this:
 
 ```
 ├── editor-api
@@ -25,7 +25,7 @@ JSON Editor is a full-stack web application that allows users to fetch, edit, an
 ```
 
 - While in the root directory of the project and not changing into subdirectories, open a terminal, and run the server using the command: `npm run server`
-- Open a new terminal on the side and run the client using the command: `npm run client` or use the deployed link: [https://json-editor-rose.vercel.app/](https://json-editor-rose.vercel.app/)
+- Open a new terminal on the side and run the client using the command: `npm run client`
 
 ## Usage
 
